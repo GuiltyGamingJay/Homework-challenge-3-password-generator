@@ -8,8 +8,12 @@ function generatePassword(){
 
   var passwordLength = parseInt(userInput)
 
-  if(isNaN(passwordLength))
+  if(isNaN(passwordLength)){
    window.alert("Input is not of numeric value!!! Please try Again!!!")
+} else{
+  window.alert( "Congratulations that is a valid number!!!")
+
+}
 }
 
 
