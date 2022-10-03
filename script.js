@@ -10,12 +10,22 @@ function generatePassword(){
 
   if(isNaN(passwordLength)){
    window.alert("Input is not of numeric value!!! Please try Again!!!")
-} else{
+   return
+}
+if (passwordLength < 8 || passwordLength > 128){
+  window.alert("Password length must be between 8 and 128 characters")
+  return
+}
+
+else{
   window.alert( "Congratulations that is a valid number!!!")
 
 }
+var usersWantsNumbers = window.confirm("Would you like to include numbers in your Password?")
+var usersWantsymbols = window.confirm("Would you like to include Symbols in your Password?")
+var usersWantsLowercase = window.confirm("Would you like to include Lowercase letters in your Password?")
+var usersWantsUppercase = window.confirm("Would you like to include Uppercase letters in your password?")
 }
-
 
 // Get references to the #generate element
 
