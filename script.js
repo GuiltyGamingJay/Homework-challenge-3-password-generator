@@ -22,10 +22,61 @@ else{
 
 }
 var usersWantsNumbers = window.confirm("Would you like to include numbers in your Password?")
-var usersWantsymbols = window.confirm("Would you like to include Symbols in your Password?")
+var usersWantsSymbols = window.confirm("Would you like to include Symbols in your Password?")
 var usersWantsLowercase = window.confirm("Would you like to include Lowercase letters in your Password?")
 var usersWantsUppercase = window.confirm("Would you like to include Uppercase letters in your password?")
+
+var numberlist = [ "0", "1","2","3","4","5","6","7","8","9"]
+var symbolList = ["!","#","$","%","&","'","(",")","*","+","-","=",".","/",":",";","<","=",">","?","@","[","]","^","_"]
+var LowercaseList = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"]
+var UppercaseLIst =[] 
+var optionsCart = []
+
+for (var i = 0; i < LowercaseList.length; i++){
+   UppercaseLIst[i] = LowercaseList[i].toUpperCase()
 }
+
+
+if (usersWantsNumbers === true){
+  optionsCart.push(numberlist)
+
+}
+
+if (usersWantsSymbols === true){
+  optionsCart.push(symbolList)
+
+}
+
+if (usersWantsLowercase === true){
+  optionsCart.push(LowercaseList)
+
+}
+
+if (usersWantsUppercase === true){
+  optionsCart.push(UppercaseLIst)
+
+}
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
 
 // Get references to the #generate element
 
