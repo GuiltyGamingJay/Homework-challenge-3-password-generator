@@ -2,6 +2,11 @@
 var generateBtn = document.querySelector("#generate");
 
 
+
+function randomint(min, max){
+ return Math.floor(Math.random()*(max-min) = min)
+}
+
 function generatePassword(){
  
   var userInput = window.prompt("How long do you want your password to be ?")
@@ -29,12 +34,10 @@ var usersWantsUppercase = window.confirm("Would you like to include Uppercase le
 var numberlist = [ "0", "1","2","3","4","5","6","7","8","9"]
 var symbolList = ["!","#","$","%","&","'","(",")","*","+","-","=",".","/",":",";","<","=",">","?","@","[","]","^","_"]
 var LowercaseList = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"]
-var UppercaseLIst =[] 
+var UppercaseList =["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"] 
 var optionsCart = []
 
-for (var i = 0; i < LowercaseList.length; i++){
-   UppercaseLIst[i] = LowercaseList[i].toUpperCase()
-}
+
 
 
 if (usersWantsNumbers === true){
@@ -53,10 +56,17 @@ if (usersWantsLowercase === true){
 }
 
 if (usersWantsUppercase === true){
-  optionsCart.push(UppercaseLIst)
+  optionsCart.push(UppercaseList)
+
+  console.log(optionsCart)
 
 }
 
+var generatedPassword = ""
+
+for( vaar i = 0; i < passwordLength; i++){
+
+}
 
 
 
