@@ -16,13 +16,13 @@ function getRandomItem(list){
 }
 
 
-function generatePassword(){
+function generatePassword() {
  
   var userInput = window.prompt("How long do you want your password to be ?")
 
   var passwordLength = parseInt(userInput)
 
-  if(isNaN(passwordLength)){
+  if(isNaN(passwordLength)) {
    window.alert("Input is not of numeric value!!! Please try Again!!!")
    return
 }
@@ -42,8 +42,9 @@ var usersWantsUppercase = window.confirm("Would you like to include Uppercase le
 
 var numberlist = [ "0", "1","2","3","4","5","6","7","8","9"]
 var symbolList = ["!","#","$","%","&","'","(",")","*","+","-","=",".","/",":",";","<","=",">","?","@","[","]","^","_"]
-var LowercaseList = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"]
-var UppercaseList =["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"] 
+var lowercaseList = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"]
+var uppercaseList =["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z", "a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"]
+
 var optionsCart = []
 
 
@@ -60,16 +61,18 @@ if (usersWantsSymbols === true){
 }
 
 if (usersWantsLowercase === true){
-  optionsCart.push(LowercaseList)
+  optionsCart.push(lowercaseList)
 
 }
 
 if (usersWantsUppercase === true){
-  optionsCart.push(UppercaseList)
+  optionsCart.push(uppercaseList)
 }
+
 if (optionsCart.length === 0){
-  optionsCart.push(LowercaseList)
+  optionsCart.push(lowercaseList)
 }
+
 var generatedPassword = ""
 
 for( var i = 0; i < passwordLength; i++){
@@ -78,6 +81,7 @@ for( var i = 0; i < passwordLength; i++){
    generatedPassword += randomChar
 }
 
+return generatedPassword
 }
 
 
