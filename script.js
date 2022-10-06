@@ -75,25 +75,6 @@ for( var i = 0; i < passwordLength; i++){
 }
 
 
-
-
-
-
-dfd
-
-
-
-}
-
-
-
-
-
-
-
-
-
-
 // Get references to the #generate element
 
 
