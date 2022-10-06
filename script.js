@@ -1,15 +1,20 @@
-// Assignment code here
 var generateBtn = document.querySelector("#generate");
 
 
 
 function randomInt(min, max){
- return Math.floor(Math.random()*(max-min) = min)
+if(!max){
+  max = min
+  min = 0
 }
 
+var rand = Math.random()
+  return Math.floor(min*(1-rand) + rand*max)
+}
 function getRandomItem(list){
   return list[randomInt(0, list.length - 1)]
 }
+
 
 function generatePassword(){
  
@@ -71,8 +76,18 @@ var generatedPassword = ""
 for( var i = 0; i < passwordLength; i++){
   var randomList = getRandomItem(optionsCart)
   var randomChar =getRandomItem(randomList)
-  console.log(randomChar)
+   generatedPassword += randomChar
 }
+
+}
+
+
+
+
+
+
+
+
 
 
 // Get references to the #generate element
