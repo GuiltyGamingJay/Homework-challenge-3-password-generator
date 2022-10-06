@@ -66,11 +66,10 @@ if (usersWantsLowercase === true){
 
 if (usersWantsUppercase === true){
   optionsCart.push(UppercaseList)
-
-  console.log(optionsCart)
-
 }
-
+if (optionsCart.length === 0){
+  optionsCart.push(LowercaseList)
+}
 var generatedPassword = ""
 
 for( var i = 0; i < passwordLength; i++){
