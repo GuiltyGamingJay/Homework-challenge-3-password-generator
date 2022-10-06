@@ -84,15 +84,6 @@ for( var i = 0; i < passwordLength; i++){
 return generatedPassword
 }
 
-
-
-
-
-
-
-
-
-
 // Get references to the #generate element
 
 
